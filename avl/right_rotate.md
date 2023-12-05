@@ -40,10 +40,15 @@ Step 1: Node y is 30, and x is 20 (the left child of y). T2 is 25 (the right chi
 Step 2: Rotate the nodes:
 
 x.right = y: Make y the right child of x.
-y.left = T2: Make T2 the left child of y.   
-Step 3: Update heights:
+y.left = T2: Make T2 the left child of y. 
 
+
+
+Step 3: Update heights:
 Update the height of y (Node 30) and x (Node 20) after the rotation.   
+
+
+
 Step 4: Return the new root node (x), which becomes the root of the subtree after the rotation.
 
 
@@ -53,4 +58,7 @@ After the right rotation on node 30, the tree is balanced, with node 20 becoming
 
 
 
-@author abhinav3254
+ abhinav3254
+
+[author](https://github.com/abhinav3254)
+
