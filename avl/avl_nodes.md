@@ -1,3 +1,5 @@
+SELF PACE
+
 AVL trees are self-balancing binary search trees where the balance factor of each node is maintained to ensure the tree remains approximately balanced. The balance factor is the difference in height between the left and right subtrees of a node.
 
 ### AVL Tree Characteristics:
