@@ -1,12 +1,14 @@
 rightRotate() explaination :- 
 
 Consider the following AVL tree:
-
+```
      30
     /  \
   20    40
  / \     \
 10  25    50
+
+```
 
 
 Now, let's perform a right rotation on node 30:
