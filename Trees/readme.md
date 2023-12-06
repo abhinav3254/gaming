@@ -71,7 +71,7 @@ Traversal is the process of visiting all nodes in the BST in a specific order. C
 3. **Post-Order Traversal:** Visit left subtree, right subtree, current node.
 
 ### Traversal Algorithm
-
+#### In-Order Traversal
 ```java
 static void inOrderTraversal(Node node) {
     if (node != null) {
@@ -81,13 +81,22 @@ static void inOrderTraversal(Node node) {
     }
 }
 ```
-
+#### Pre-Order Traversal
 ```java
 static void preOrderTraversal(Node node) {
         if (node == null) return;
         System.out.print(node.data+" ");
         preOrderTraversal(node.left);
         preOrderTraversal(node.right);
+    }
+```
+#### Post-Order Traversal
+```java
+static void postOrderTraversal(Node node) {
+        if (node == null) return;
+        postOrderTraversal(node.left);
+        postOrderTraversal(node.right);
+        System.out.print(node.data+" ");
     }
 ```
 
