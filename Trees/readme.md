@@ -125,3 +125,51 @@ static Node search(Node root, int key) {
 ## Conclusion
 
 Binary Search Trees provide an efficient way to organize and search data in a sorted order. Understanding their basic principles, operations, and considerations is crucial for utilizing them effectively in various applications. Proper balancing techniques, such as AVL trees or Red-Black trees, can address some of the limitations associated with unbalanced BSTs.
+
+
+
+The time and space complexity of each operation in a Binary Search Tree (BST) can vary depending on the implementation and the balancing properties of the tree. Here, I'll provide general information based on the average case in a balanced BST.
+
+### Time Complexity:
+
+1. **Search (average):**
+   - Time Complexity: O(log n)
+   - Explanation: In a balanced BST, the height of the tree is logarithmic in the number of nodes, ensuring efficient search operations.
+
+2. **Search (worst case, unbalanced):**
+   - Time Complexity: O(n)
+   - Explanation: If the BST is unbalanced (e.g., skewed), the search time complexity can degrade to O(n) as it becomes essentially a linked list.
+
+3. **Insertion (average):**
+   - Time Complexity: O(log n)
+   - Explanation: Similar to search, insertion in a balanced BST takes logarithmic time.
+
+4. **Insertion (worst case, unbalanced):**
+   - Time Complexity: O(n)
+   - Explanation: In an unbalanced BST, insertion can take linear time, as it may involve traversing the entire height of the tree.
+
+5. **Deletion (average):**
+   - Time Complexity: O(log n)
+   - Explanation: Deletion in a balanced BST has an average time complexity of O(log n).
+
+6. **Deletion (worst case, unbalanced):**
+   - Time Complexity: O(n)
+   - Explanation: In an unbalanced BST, deletion can take linear time in the worst case.
+
+7. **Traversal (in-order, pre-order, post-order):**
+   - Time Complexity: O(n)
+   - Explanation: Visiting all nodes during a traversal requires linear time.
+
+### Space Complexity:
+
+1. **Space Complexity (average):**
+   - Space Complexity: O(n)
+   - Explanation: In the average case, the space complexity is O(n) to store n nodes in the tree.
+
+2. **Space Complexity (worst case, unbalanced):**
+   - Space Complexity: O(n)
+   - Explanation: In the worst case (unbalanced tree), the space complexity remains O(n).
+
+These complexities are based on the assumption of a balanced BST. For self-balancing trees (e.g., AVL trees, Red-Black trees), the worst-case time complexity for search, insertion, and deletion remains O(log n) even in the presence of various operations.
+
+Remember that these are general complexities, and specific implementation details or variations may affect these values.
