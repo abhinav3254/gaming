@@ -21,6 +21,26 @@ class BinarySearchTree {
         }
     }
 
+
+    /**
+     *
+     *          1
+     *         / \
+     *        2   3
+     *      /  \
+     *     4    5
+     *
+     * maxDepth(‘1’) = max(maxDepth(‘2’), maxDepth(‘3’)) + 1 = 2 + 1
+     *
+     * because recursively
+     * maxDepth(‘2’) =  max (maxDepth(‘4’), maxDepth(‘5’)) + 1 = 1 + 1 and  (as height of both ‘4’ and ‘5’ are 1)
+     * maxDepth(‘3’) = 1
+     */
+    static int height(Node node) {
+        if (node == null) return 0;
+        return Math.max(height(node.left),height(node.right))+1;
+    }
+
     /**
      * Recursive method to insert a new node with the given data into the binary search tree.
      *
@@ -80,5 +100,9 @@ class BinarySearchTree {
         // Display the resulting binary search tree.
         System.out.println("Binary Search Tree:");
         display(root);
+
+        System.out.println("");
+        System.out.println("Height of Tree is :- "+height(root));
+        
     }
 }
