@@ -34,12 +34,13 @@ right right rotation.
 
 When a node is added into the left subtree of left subtree then,
 it makes the left side unbalance so we need to do the RIGHT RIGHT rotation.
+```
 	  C
 	 /
 	B
        /
       A
-
+```
 If this is the condition then we need to do right right (RR) rotation
 
 So, for this we are going to write the condition of 
