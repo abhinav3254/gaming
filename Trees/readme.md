@@ -1,4 +1,4 @@
-# Binary Search Trees (BST) In-Depth Notes
+# Binary Search Trees (BST) Notes
 
 ## Overview
 
