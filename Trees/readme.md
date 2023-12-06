@@ -82,6 +82,15 @@ static void inOrderTraversal(Node node) {
 }
 ```
 
+```java
+static void preOrderTraversal(Node node) {
+        if (node == null) return;
+        System.out.print(node.data+" ");
+        preOrderTraversal(node.left);
+        preOrderTraversal(node.right);
+    }
+```
+
 ## Deletion
 
 Deleting a node from a BST involves three cases:
