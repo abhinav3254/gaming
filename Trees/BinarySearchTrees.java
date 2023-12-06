@@ -81,6 +81,38 @@ class BinarySearchTree {
     }
 
     /**
+ * Recursively searches for a specific data value in a Binary Search Tree (BST).
+ *
+ * @param node The root of the current subtree being searched.
+ * @param data The data value to search for in the BST.
+ * @return True if the data is found in the BST, false otherwise.
+ */
+static boolean search(Node node, int data) {
+    // Base case: If the current node is null, the data is not found.
+    if (node == null) {
+        return false;
+    }
+
+    // Base case: If the data matches the current node's data, it is found.
+    else if (data == node.data) {
+        return true;
+    }
+
+    // Recursive case: If the data is less than the current node's data,
+    // search in the left subtree.
+    else if (data < node.data) {
+        return search(node.left, data);
+    }
+
+    // Recursive case: If the data is greater than the current node's data,
+    // search in the right subtree.
+    else {
+        return search(node.right, data);
+    }
+}
+
+
+    /**
      * The main method demonstrates the usage of the BinarySearchTree class.
      *
      * @param args Command line arguments (not used in this example).
@@ -103,6 +135,8 @@ class BinarySearchTree {
 
         System.out.println("");
         System.out.println("Height of Tree is :- "+height(root));
+
+        System.out.println("element found :- "+search(root,80));
         
     }
 }
