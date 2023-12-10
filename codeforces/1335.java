@@ -6,16 +6,8 @@ class Main {
 		int t = sc.nextInt();
 		while (t-->0) {
 			int k = sc.nextInt();
-			int a = k;
-			int b = 0;
-			int count = 0;
-
-			while (a>b) {
-				a--;
-				b++;
-				count++;
-			}
-			System.out.println(count-1);
+			if (k%2 == 0) { k = k-1;}
+			System.out.println(k/2);
 		}
 	}
 }
