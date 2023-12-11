@@ -1,11 +1,13 @@
 import java.util.Scanner;
 import java.util.HashSet;
 
+// floydsTortoise algo used
+
 class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println(isHappy(2));
+		System.out.println(floydsTortoise(19));
 
 	}
 
@@ -31,6 +33,17 @@ class Main {
 		}
 
 		return ans;
+	}
 
+	private static boolean floydsTortoise (int n) {
+		int slow = n;
+		int fast = n;
+
+		do {
+			slow = square(slow);
+			fast = square(square(fast));
+		} while(slow != fast && slow != 1);
+
+		return slow == 1;
 	}
 }
