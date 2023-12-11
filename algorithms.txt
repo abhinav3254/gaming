@@ -1,2 +1,16 @@
 1. Boyer-Moore Majority Voting Algorithm
 2. Binary Exponentiation Algorithm for calculating to the power in O(log n) complexity
+
+3. The Floyd's Tortoise and Hare algorithm, also known as cycle detection algorithm or Floyd's cycle-finding algorithm, is a technique used to detect cycles or loops in a sequence, particularly in linked lists or arrays.
+
+The method involves two pointers moving through the sequence at different speeds. One pointer moves faster than the other. If there's a cycle, these two pointers will eventually meet at some point within the cycle.
+
+Here's a simplified version of the algorithm:
+
+1. Initialize two pointers, typically named tortoise and hare, pointing to the start of the sequence.
+2. Move the tortoise one step at a time and the hare two steps at a time within the sequence.
+3. If the hare reaches the end of the sequence (i.e., a null/none value or an end marker), there's no cycle.
+4. If the hare and tortoise pointers meet at some point, it indicates the presence of a cycle.
+
+This method is used in various applications, such as in computer science for cycle detection in linked lists and graph algorithms or in mathematics for determining repeating patterns or cycles in sequences.
+
