@@ -22,3 +22,6 @@ The Floyd's Tortoise and Hare algorithm, also known as the cycle detection algor
 4. If the hare and tortoise pointers meet at some point, it indicates the presence of a cycle.
 
 This method is employed in various applications, such as in computer science for cycle detection in linked lists and graph algorithms or in mathematics for determining repeating patterns or cycles in sequences.
+
+
+## digital root formula --> explained inside leetcode 258.md
