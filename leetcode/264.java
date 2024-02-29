@@ -9,18 +9,15 @@ class Main {
 	}
 
 	public static int nthUglyNumber(int n) {
-		int count = 0; 
+		int count = 1; 
 		int i = 1;
-        while (count <= n) {
+        while (count < n) {
+        	i++;
         	if (isUglyOptimized(i)) {
         		count++;
         	}
-        	if (count == n) {
-        		return i;
-        	}
-        	i++;
         }
-        return 0;
+        return i;
     }
 	
 
